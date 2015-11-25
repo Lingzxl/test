@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-11-23 16:39:06
+ * @version $Id$
+ */
+*{
+	font-family:"微软雅黑", "宋体","Glyphicons Halflings", "Microsoft Yahei", "华文黑体", "STHeiti", "Helvetica Neue", Helvetica,"sans-serif";
+	margin:0;
+	padding:0;
+	font-size: 1.6rem;
+}
+
+/* body{
+	background: #000!important;
+} */
+
+p{
+	margin:0;
+	padding:0;
+}
+
+a:link{color: #fff;text-decoration: none}
+a:visited{color: #fff;text-decoration: none}
+a:hover{color: #fff;text-decoration: none}
+a:active{color: #fff;text-decoration: none}
+
+header{
+	width: 100%;
+	height:70px;
+	background-color: rgb(36,41,44); 
+	text-align: center;
+	position: fixed;
+	left:0;
+	z-index: 2;
+}
+
+header span{
+	color:#fff;
+	font-size: 2.2rem;
+	margin-top: 13px;
+}
+
+header .play{
+	margin-left: 3%;
+}
+
+.upload{
+	width: 100%;
+	height: 250px;
+	background-color:pink;
+	position: relative;
+	top:70px;
+}
+
+.upload span{
+	position: absolute;
+	margin-top:100px;
+	margin-left:40%;
+	
+}
+
+.inputmessage{
+	width: 90%;
+	height: 200px;
+	background-color: #fff;
+	margin:0 auto;
+	top:70px;
+	position: relative;
+}
+
+.inputmessage .input1,.inputmessage .input2,.inputmessage .input3{
+	position: absolute;
+	top:20px;
+	left:5%;
+	width: 90%;
+	height: 35px;	
+    border-style:none; 	
+	outline:medium;
+	font-size:2.0rem;
+	color:rgb(153,153,153);
+	font-weight: bold;
+	background-color: red;
+}
+
+.inputmessage .input2{
+	top:70px;
+	font-size: 1.8rem;
+	width: 40%;
+	outline:medium;
+	background-color: #fff;
+	font-weight:normal;
+}
+
+.inputmessage .input3{
+	top:120px;
+	height: 150px;
+	font-size:1.8rem;
+	text-align: left;
+	font-weight:normal;
+}

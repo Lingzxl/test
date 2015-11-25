@@ -1,0 +1,141 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-11-20 14:38:50
+ * @version $Id$
+ */
+*{
+	font-family:"微软雅黑", "宋体","Glyphicons Halflings", "Microsoft Yahei", "华文黑体", "STHeiti", "Helvetica Neue", Helvetica,"sans-serif";
+	margin:0;
+	padding:0;
+	font-size: 1.6rem;
+}
+
+body{
+	background: #fff!important;
+}
+
+p{
+	margin:0;
+	padding:0;
+}
+
+header{
+	width: 100%;
+	height: 80px;
+	background-color: #000;
+	text-align: center;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+header .div_input{
+	width: 80%;
+	float: left;
+	height: 100%;
+	position: absolute;
+	left: 0;
+}
+
+header .div_close{
+	width: 20%;
+	height: 100%;
+	float: left;
+	position: absolute;
+	right: 0;
+
+}
+
+header .input{
+	height: 40px;
+	width: 80%;
+	border-radius: 5px;
+	line-height: 40px;
+	margin-top:20px;
+	margin-left: 10%;
+}
+
+header .close{
+	position: absolute;
+	margin-top: 25px;
+	margin-left: -5%;
+	
+}
+
+header .cancel{
+	position: absolute;
+	margin-top: 25px;
+    margin-right: 5%;
+	color:#fff;
+	left:15%;
+	font-size: 1.8rem;
+}
+
+.content{
+	width: 90%;
+	height: 220px;
+	position: relative;
+	margin:0 auto;
+	margin-bottom: 20px;
+}
+
+.content .content_hot  span{
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(134,134,134);	
+	line-height: 40px;
+	padding: 2% 5%;
+	margin:5% 2%;
+	border-radius: 5px;
+	color:rgb(134,134,134);
+}
+
+.content .content_hot{
+	margin-top: 35px;
+	width: 100%;
+	margin: 20px auto;
+	height: 40px;
+	text-align: center;
+}
+
+.div_list{
+	width:100%;
+	height: auto;
+	position: relative;
+	text-align: center;
+	color:#000;
+	border-top-style: solid;
+	border-width: 1px;
+	border-color:rgb(134,134,134);
+	padding: 20px 0px;
+}
+
+.div_list ul{
+	list-style: none;
+}
+
+.div_list ul li{
+	float: left;
+}
+
+.div_list ul li img{
+	position: absolute;
+	left:0;
+	top:5px;
+}
+
+.div_list ul li .close{
+    position: absolute;
+	right:5%;
+	top:15px;
+}
+
+.div_list ul li .list{
+	position: absolute;
+	left:18%;	
+	font-size: 1.8rem;
+}
+
+
+

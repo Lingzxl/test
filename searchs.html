@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>搜索页</title>
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+		<link rel="stylesheet" type="text/css" href="css/amazeui.css">
+	    <link rel="stylesheet" type="text/css" href="css/searchs.css" media="(max-width:614px)">
+
+	</head>
+
+	<body>
+		<header>
+		<div class="div_input">
+		    <input results="ss" type="search" placeholder="搜听后感，歌曲" class="input"
+		     id="input"/>
+			<span class="am-icon-times close"  onclick="javascript:document.   getElementById('input').value='';">
+			</span> 
+		</div>
+        <div class="div_close">
+			<span class="cancel">取消</span> 
+		</div>
+		</header>
+
+		<div class="content">
+			<span style="font-size:1.9rem;">热门搜索</span>
+
+		<div class="content_hot">
+		<span>南山南</span><span>罗门锁</span><span>喜帖街</span>
+		</div>
+
+		<div class="content_hot">
+		<span>南山南</span><span>罗门锁</span><span>喜帖街</span>
+		</div>
+
+		<div class="content_hot">
+		<span>南山南</span><span>罗门环境环境h锁</span>
+		</div>
+		
+		</div>
+
+
+        <a href="#">
+		<div class="div_list">
+			<ul>
+				<li><img src="images/u12.png" width="51.2px" height="51.2px"></li>
+				<li><span class="list">ALL of Me&nbsp&nbsp张靓颖</span></li>
+				<li><span class="am-icon-times close"></span></li>
+			</ul>
+		</div>
+        </a>
+	
+
+         <a href="#">
+		<div class="div_list">
+			<ul>
+				<li><img src="images/u12.png" width="51.2px" height="51.2px"></li>
+				<li><span class="list">ALL of Me&nbsp&nbsp张靓颖</span></li>
+				<li><span class="am-icon-times close"></span></li>
+			</ul>
+		</div>
+        </a>
+
+	    <a href="#">
+		<div class="div_list">
+			<ul>
+				<li><img src="images/u12.png" width="51.2px" height="51.2px"></li>
+				<li><span class="list">ALL of Me&nbsp&nbsp张靓颖</span></li>
+				<li><span class="am-icon-times close"></span></li>
+			</ul>
+		</div>
+        </a>
+
+	<script src="js/zepto.js"></script>
+    <script type="text/javascript">
+	    $('.div_list ul li .close').tap(function(){
+            $(this).parents('.div_list').remove()
+        })
+
+        $('.div_input .close').tap(function(){
+            $('.div_input .input').value.remove();
+        })
+    </script>
+
+	
+	</body>
+</html>
