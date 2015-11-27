@@ -56,12 +56,10 @@ header{
 }
 
 .headc{
-	width: 80%;
+	width: 70%;
 	height:100%;
 	top:0;
 	right:0;
-	clear:both;
-	text-align: center;	
 }
 
 .headc span{
@@ -88,63 +86,44 @@ header{
 	height: 155px;
 }
 
-
 .contxt1{
-	background: url(../images/u10.png) no-repeat;
-	background-position: center center;
-	background-size:100%;
-	position: relative;	
-    width: 100%;
-    color: #fff;
-    height: 133px;   
-    border-bottom-style: none; 
+	background: url(../images/u10.png) no-repeat;	
 }
 
 .contxt2{
-	background: url(../images/u36.png) no-repeat;
-	background-position: center center;
-	background-size:100%;
-	position: relative;	
-    width: 100%;
-    color: #fff;
-    height: 133px;   
-    border-bottom-style: none;   
+	background: url(../images/u36.png) no-repeat; 
 }
 
 .contxt3{
-	background: url(../images/u24.png) no-repeat;
-	background-position: center center;
-	background-size:100%;
-	position: relative;	
-    width: 100%;
-    color: #fff;
-    height: 133px;   
-    border-bottom-style: none;  
+	background: url(../images/u24.png) no-repeat; 
 }
 
 .contxt4{
 	background: url(../images/u10.png) no-repeat;
-	background-position: center center;
-	background-size:100%;
-	position: relative;	
-    width: 100%;
-    color: #fff;
-    height: 133px;   
-    border-bottom-style: none;
     margin-bottom: 55px;
 }
 
+.contxt1,.contxt2,.contxt3,.contxt4{
+	background-position: center center;
+	background-size:100% 100%;
+	position: relative;	
+    width: 100%;
+    color: #fff;
+    height: 185px;   
+    border-bottom-style: none; 
+}
+
  .mtop{
- 	top:12px;
- 	font-weight: bold;
+ 	top:25px;
+ 	
  }
 
   .mmiddle{
-  	top:48px;	
+  	top:88px;	
   }
 
  .mbottom{
- 	top:95px;
+ 	top:135px;
  }
  
  .mtop,.mmiddle,.mbottom {
@@ -155,7 +134,8 @@ header{
  }
  
   .mtop .msize{
- 	font-size: 1.6rem;
+  	font-size: 1.8rem;
+ 	font-weight: bold;
  }
  
  .mmiddle{
@@ -209,6 +189,7 @@ header{
     -webkit-border-radius: 35px;
     -moz-border-radius: 35px;
 }
+
 
 /* footer{
 	display: block!important;
