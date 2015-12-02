@@ -5,14 +5,16 @@
 		<title>歌曲详情</title>
 		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
 		<link rel="stylesheet" type="text/css" href="css/amazeui.css">
-		<link rel="stylesheet" type="text/css" href="css/songdetail.css"media="(max-width:614px)">
+		<link rel="stylesheet" type="text/css" href="css/pcsongdetail.css">
+		<link rel="stylesheet" type="text/css" href="css/msongdetail.css"media="(max-width:614px)">
 	</head>
 
 	<body>
 
-	<div class="download">
+
+	<div class="download pcnone">
      <div class="close">
-       <span class="am-icon-close cl" style="color:#000;font-size:2.2rem;"></span>
+       <span class="am-icon-close cl"></span>
      </div>
       <div class="logo">
        <img src="images/logo.png" width="110px" height="110px">
@@ -22,35 +24,53 @@
        <p class="install">已安装</p>
      </div>	
      <div class="open">
-       <a href="#"><span class="op" style="color:blue;">打开</span></a>
+       <a href="#"><span class="op" style="color:rgb(0,122,255)">打开</span></a>
      </div> 
     </div>
    
+    <div class="header pcnone">
 	<header>
 		<a href="#">
 		   <span class="am-icon-play-circle-o am-icon-md">
 		      <span class="play">播放歌曲</span>
 		   </span>
 		</a>
-		<span class="am-icon-edit am-icon-md" style="color: #00B6FF;float:right;margin-right:3%;">	
-		</span>
+		<a href="#"><img src="images/u70.png"/></a>
+		<!-- <span class="am-icon-edit am-icon-md" style="color: #00B6FF;float:right;margin-right:3%;">	 
+		</span>-->
 	</header>
+    </div>
 
-<!-- 播放歌曲 -->
-
-   
-	<div class="video">
-		<img src="images/u27.png"  width="100px" height="100px">
+<div class="content">
+<!-- 手机端播放歌曲 -->
+	<div class="mvideo pcnone">
+		<img src="images/u27.png"  width="110px" height="110px">
 		<!-- 播放歌曲的文字说明 -->
 		<div class="play">
-			<p class="vtxt1" style="font-size:1.8rem">罗生门</p>
+			<p class="vtxt1" style="font-size:1.9rem">罗生门</p>
 			<p class="vtxt2" >麦浚龙/谢安琪</p>
 			<img src="images/u53.png" width="48px" height="48px">
         <!-- 播放歌曲的进度条 -->
-			<div class="control" style="width:95%;height:5px;background-color:#fff;position:abolute;margin:0 auto;margin-top:30px;border-radius:2px;border-style:solid;border-width:1px;margin-left:0;">			
+			<!-- <div class="control" style="width:95%;height:5px;background-color:#fff;position:abolute;margin:0 auto;margin-top:30px;border-radius:2px;border-style:solid;border-width:1px;margin-left:0;">			
 			</div>
 			<span class="timestart" style="font-size:1.4rem">00:00</span>
-			<span class="timeend" style="font-size:1.4rem;">03:00</span>
+			<span class="timeend" style="font-size:1.4rem;">03:00</span> -->
+		</div>		
+    </div>  
+
+<!-- PC播放歌曲 -->
+	<div class="pvideo mobilenone">
+		<img src="images/u27.png"  width="150px" height="150px" class="img1">
+		<!-- 播放歌曲的文字说明 -->
+		<div class="play">
+			<p class="vtxt1" style="font-size:1.9rem">罗生门</p>
+			<p class="vtxt2" >麦浚龙/谢安琪</p>
+			<img src="images/u53.png" width="48px" height="48px" class="img2">
+        <!-- 播放歌曲的进度条 -->
+			<!-- <div class="control" style="width:95%;height:5px;background-color:#fff;position:abolute;margin:0 auto;margin-top:30px;border-radius:2px;border-style:solid;border-width:1px;margin-left:0;">			
+			</div>
+			<span class="timestart" style="font-size:1.4rem">00:00</span>
+			<span class="timeend" style="font-size:1.4rem;">03:00</span> -->
 		</div>		
     </div>  
 
@@ -63,13 +83,13 @@
 		<p class="intro" style="color:rgb(153,153,153)">简介</p>
 		
 		<p>
-		<span>《罗生门》是麦浚龙（Juno）2015年推出的单曲，与歌曲《耿耿于怀》，及后期推出续集《念念不忘》，直到近日与谢安
+		<span>《罗生门》是麦浚龙（Juno）2015年推出的单曲，与歌曲《耿耿于怀》，及后期推出续集《念念不忘》，直到近日与谢安gfg优化规划法规个
 		</span>
 	<!-- 简介展开内容 -->
 		<div class="lots" id="lots">生门》司法鉴定附近的开始浪费《罗生门》是麦浚龙（Juno）
 		2015年推出的单曲，与歌曲《耿耿于怀》，及后期推出续集《念念不忘》，直到近日与谢安琪合唱终结篇的《罗生门》月狂热妞儿UIUR熊URUI呕吐哦看【 已添加天然看哦佟二堡体如同刚刚，及后期推出续集《念念不
 		  <div class="sclose">
-		    <a style="color:blue" class="alest">收起</a>
+		    <a href="javascript:void(0)" style="color:blue" class="alest">收起</a>
 		  </div>
 		</div>
 		</p>
@@ -99,9 +119,10 @@
 		</div>
 
 		 <div class="ssclose" style="display:none;">
-		    <a style="color:blue" class="aalest" >收起</a>
+		    <a href="javascript:void(0)" style="color:blue" class="aalest" >收起</a>
 		 </div>
 	</div>
+
 
 	<div class="afterlisten">
 	  <div class="aftertxt">
@@ -111,10 +132,11 @@
 	  	  <p class="new">最新</p>
 	  	</div>
 	  </div>
-       
-           
+    </div> 
+</div>          
+
 	    <div class="afterhot">
-	      <img src="images/u24.png" width="75px" height="70px">
+	      <div class="img"></div>
 	  	  <div class="hotlist">
 	  	  	<p>耿耿于怀，所以念念不忘</p>
 	  	  	<p class="hotinline">
@@ -127,12 +149,12 @@
 	  	  	</p>
 	  	  </div>
 	  	  <a href="#">
-	  	    <span class="am-icon-chevron-right" style="position:absolute;right:0;top:30px;color:#000;"></span>
+	  	    <span class="am-icon-chevron-right chevron-right"></span>
 	  	  </a>
 	    </div>
      
 	    <div class="afternew" style="display:none">
-	      <img src="images/u10.png" class="photo" width="75px" height="70px">
+	          <div class="img"></div>
 	   	  	  <div class="hotlist">
 	   	  	  	<p>前世轮回，前世轮回</p>
 	   	  	  	<p class="hotinline">
@@ -145,11 +167,9 @@
 	   	  	  	</p>
 	   	  	  </div>
 	   	  	 <a href="#">
-	  	       <span class="am-icon-chevron-right" style="position:absolute;right:0;top:30px;color:#000;"></span>
+	  	       <span class="am-icon-chevron-right chevron-right"></span>
 	  	     </a>
 	    </div>
-
-	</div>
 
     <script src="js/zepto.js"></script>
     <script type="text/javascript">
@@ -171,6 +191,7 @@
 			$("header").css("top","0");	
 		}
 
+    /*简介展开*/
 		 $(document).ready(
 			function(){
 			if($(".sopen").is(":visible")==true){
@@ -191,17 +212,16 @@
                 }            
 		    }
 	    );
-
+    /*歌词展开*/
 		 $(document).ready(
 			function(){
 			if($(".sopen").is(":visible")==true){
 				$(".alot").tap(function(){												
 						$(".introduce .lots").css("display","block");
 						$(".introduce .sopen").css("display","none");
-						$(".introduce .sclose").css("display","block");
-						
+						$(".introduce .sclose").css("display","block");						
 						if($(".sclose").is(":visible")==true){
-            	           $(".alest").tap(function(){												
+            	           $(".alest").tap(function(){										
 						         $(".introduce .lots").css("display","none");
 						         $(".introduce .sclose").css("display","none");
 						         $(".introduce .sopen").css("display","block");
@@ -213,29 +233,36 @@
                 }            
 		    }
 	    );
-
+     /*听后感的最热最新搜索*/
 		 $(document).ready(
 			function(){
 			if($(".afterhot").is(":visible")==true){
 				$(".hot-new .hot").css("background","rgb(91,91,91)");
-				$(".hot-new .new").css("color","#000");
-						
-				$(".hot-new .new").tap(function(){												
+				$(".hot-new .new").css("color","#000");			
+				$(".hot-new .new").tap(function(){											
 						$(".afterhot").css("display","none");	
 						$(".afternew").css("display","block");	
-						$(".hot-new .hot").css("background","none");
-						$(".hot-new .new").css("background","rgb(91,91,91)");
-						$(".hot-new .hot").css("color","#000");
-						$(".hot-new .new").css("color","#fff");						
+						$(".hot-new .hot").css({
+							background: 'none',
+							color: '#000'
+						});
+						$(".hot-new .new").css({
+							background: 'rgb(91,91,91)',
+							color: '#fff'
+						});					
 						           
 						if($(".afternew").is(":visible")==true){
-            	           $(".hot-new .hot").tap(function(){		
-            	                $(".hot-new .new").css("background","none");	
-            	                $(".hot-new .hot").css("background","rgb(91,91,91)");
-            	                $(".hot-new .new").css("color","#000");	
-            	                $(".hot-new .hot").css("color","#fff");	
+            	           $(".hot-new .hot").tap(function(){
+            	           		$(".hot-new .new").css({
+            	           			background: 'none',
+            	           			color: '#000'
+            	           		});
+            	           		$(".hot-new .hot").css({
+            	           			background: 'rgb(91,91,91)',
+            	           			color: '#fff'
+            	           		});          
 						        $(".afterhot").css("display","block");	
-						        $(".afternew").css("display","none");						         
+						        $(".afternew").css("display","none");				         
 					            }
 				           );
                          }
@@ -243,15 +270,8 @@
 				   );	
                 }            
 		    }
-	    );
-
- 
-
-
-
-		
+	    );	
 	</script>
-
 	    
 	</body>
 </html>

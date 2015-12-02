@@ -13,7 +13,7 @@
 }
 
 body{
-	background: #000!important;
+	background: #000!important; 
 }
 
 p{
@@ -25,36 +25,40 @@ p{
 	display: none!important;
 }
 
+.pcmiddle{
+	width: 1280px;
+	margin:0 auto;
+	position: relative;
+	background-color: green;
+}
+
 /*header*/
 header{
 	width:100%;
 	height:140px;
-	background-color: #000;
-	position: relative;
+	background-color: gray;
 }
 
 .heada{
-	width: 20%;
+	width: 325px;
 	height: 140px;
-	position: absolute;
-	top:0;
-	left:0;
+	float: left;	
 }
 
 .heada p{
 	font-size:3.8rem;
 	color:#fff;
 	margin-left:50%;
-    margin-top: 55px;
+    margin-top: 50px;
 	font-weight: bold;
 }
 
 .headb{
-	width:30%;
+	width:510px;
 	height:140px;
-	position:absolute;
-	top:0;
-	left:20%;
+
+	float: left;
+	position: relative;
 }
 
 .headb img{
@@ -64,7 +68,6 @@ header{
 	border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-
 }
 
 .headb input{
@@ -79,11 +82,10 @@ header{
 }
 
 .headc{
-	width: 15%;
+	width: 150px;
 	height:140px;
-	position: absolute;
-	top:0;
-	right:33%;
+
+	float: left;
 }
 
 .headc span{
@@ -94,30 +96,6 @@ header{
     margin-left: 15%;
 }
 
-.headd{
-	width: 35%;
-	height:140px;
-	position: fixed;
-	top:0px;
-	right:0;
-}
-
-.headd ul {
-    list-style: none;
-    margin-top: 8%;
-}
-
-.headd .dnone{
-	color:#fff;
-	font-size: 2.5rem;
-	font-weight: bold;
-	margin-left: 10%;
-}
-
-.headd .dcircle{
-	margin-left: 10%;
-	font-size: 2.6rem;
-}
 
 /*menu*/
 .menu{
@@ -129,6 +107,28 @@ header{
 	position: fixed;
 }
 
+/* @media screen and (max-width:1280px) and (max-width:1336px){
+.menu{
+	margin-left:-2%;
+}
+}
+
+@media screen and (max-width:1337px) and (max-width:1440px){
+.menu{
+	margin-left: 0%;
+}
+} */
+
+/*menu*/
+.menu{
+	height: 350px;
+	margin-top: 20px;
+	text-align: center;
+	position: fixed;
+	width: 130px;
+	background-color:pink;
+}
+
 .menu ul{
 	list-style: none;
 	line-height: 30px;
@@ -137,8 +137,8 @@ header{
 .menu ul li{
 	margin-left: 10%;
     width: 50%;
-	padding-top:10%;
-	font-size: 1.8rem;
+	padding-top:20%;
+	font-size: 2.0rem;
 }
 
 .current{
@@ -179,14 +179,16 @@ header{
 
 /*content*/
 .content{
-	width: 60%;
+	width:890px;
+	margin:0 auto;
 	margin-top: 0px;
-	margin-left: 10%;
+	margin-left:130px;
+	background-color: blue;
 }
 
 .content .hot-new{
 	height: 40px;
-	width: 20%;
+	width: auto;
 	margin-bottom: 12px;
 }
 
@@ -195,14 +197,13 @@ header{
 	margin-left: -30px;
 }
 
-
 .content .hot-new ul li{
    color: rgb(121,121,121);
    border: 1px solid rgb(121,121,121);
    float: left;
    border-radius: 5px;
    padding: 3px 20px;
-   margin-right:10% ; 
+   margin-right:2%; 
    font-size: 1.5rem;
 }
 
@@ -217,7 +218,6 @@ header{
 .content .hot-new ul li a{
 	color:rgb(121,121,121);
 }
-
 
 .conimg{
 	height: 260px;
@@ -261,6 +261,7 @@ header{
 .txtmid .txtsize{
     font-size: 2.4rem;
     font-weight: bold;
+    color:#fff;
 }
 
 .txtmid p span{
@@ -268,41 +269,199 @@ header{
 	color:rgb(215,215,215);
 }
 
-.code{
-	width: 10%;
-	height:300px;
-	position:fixed;/*设置fixed*/
+@media screen and (max-width:1336px){
+.aa{
+	right:0;
+}
+.to-top{
+    right: 15%;
+} 
+}
+@media screen and (min-width:1337px) and (max-width:1387px){
+.aa{
+	right:2%;
+}
+.to-top{
+    right: 17%;
+} 
+}
+@media screen and (min-width:1388px) and (max-width:1680px){
+.aa{
+	right:5%;
+}
+.to-top{
+    right: 16%;
+} 
+}
+@media screen and (min-width:1681px) and (max-width:1920px){
+.aa{
+	right:10%;
+}
+.to-top{
+    right: 20%;
+} 
+}
+@media screen and (min-width:1921px) and (max-width:2560px){
+.aa{
+	right:16%;
+}
+.to-top{
+    right: 25%;
+}
+
+
+}
+@media screen and (min-width:2560px) {
+.aa{
+	right:25%;
+}
+.to-top{
+    right: 40%;
+} 
+}
+
+.aa{
+	background-color: pink;
+	position: fixed;
+	width: 260px;
+	top:35px;
+}
+
+.headd{
+	width: 150px;
+	height:140px;
+	top:0px;	
+	overflow: hidden;
+}
+
+.headd ul {
+    list-style: none;
+    margin-top: 8%;
+    margin-left: -20%;
+    background-color: green;
+}
+
+.headd .dnone{
+	color:#fff;
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+
+.headd .dcircle{
+	font-size: 2.6rem;
+}
+
+
+/* 滚动条、二维码 */
+.conright{
+	width:100%;
+	height: 500px;	
+	top:140px;
+}
+
+.conright.code{
+	width: 30%;
+	height:200px;
+	/* position:fixed;设置fixed */
 	top:17%;
 	right: 20%;
 	color:#fff;
 }
 
-.code .chesong{
+.conright .chesong,.conright .checlose{
    color: #fff;
    font-size: 1.3rem;
    text-decoration:underline;
    bottom: 20px;
 }
 
-.code .code-img img{
-	width: 65%;
-	height:65%;
+.conright .checlose{
+	display: none;
+}
+
+.conright .code .code-img img{
+	width: 45%;
+	height: 45%;
 	margin-top: 50px;
+}
+
+@media only screen and (max-width:1280px){
+.conright .code .code-img img{
+	width: 65%;
+	height: 65%;
+}
 }
 
 .download span{
 	font-size: 1.4rem;
 }
 
+.clr {
+	clear:both;
+	height:0
+}
+
+/** 滚动条**/
+/* main container */
+.jScrollbar { 
+	width:12%;
+	height:400px;
+	overflow:hidden;
+	position:fixed;
+	background-color:#000;
+	padding:5px;
+	margin-top: 10px;
+	display: none;
+}
+/* text container */
+.jScrollbar_mask { 
+	width:75%;
+	position:relative;
+	top:0;
+	float:left;
+}
+/* paragraphs */
+.jScrollbar .jScrollbar_mask p { 
+	margin:0;
+	padding:0;
+	color:rgb(201,201,201);
+	font-size:1.2rem;
+	text-align: center;
+	/* text-indent: 1rem; */
+}
+/* slider container */
+.jScrollbar_draggable { 
+	float:left;
+	width:7%;
+	height:380px;
+	overflow:hidden;
+/* 	background:transparent url('../images/bg_jScrollbar_draggable.jpg') repeat-y center top; */
+	margin-left:6%;
+	position:relative;
+	top:0;
+}
+/** draggable **/
+.jScrollbar_draggable a.draggable { 
+	position:relative;
+	background-color:rgb(161,161,161);
+	display:block;
+	height:120px;
+	width:9px;
+	margin-left:6px;
+	/* cursor:s-resize; */
+	cursor:pointer;
+}
+
 /*to-top*/
 .to-top{
-	width: 35px;
+	width: 40px;
 	height: 65px;
 	background-color: #fff;
-	bottom:10%;
-	right:25%;
+	bottom:10%;	
 	position: fixed;
 }
+
+
 
 .top-cade{
 	text-align: center;
@@ -317,6 +476,7 @@ header{
 footer{
 	display: none!important;
 }
+
 
 /* .attach{
 	

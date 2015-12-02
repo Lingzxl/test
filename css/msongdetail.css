@@ -26,14 +26,23 @@ a:visited{color: #fff;text-decoration: none}
 a:hover{color: #fff;text-decoration: none}
 a:active{color: #fff;text-decoration: none}
 
+.mobilenone{
+    display: none;
+}
+
+.content{
+	width: 100%;	
+	margin:0 auto;
+}
+
 .download{
 	width: 100%;
-	height:110px;
+	height:100px;
 	position: relative;
 	background-color:rgb(242,242,242);
 	top:0;
 	left: 0;
-
+	display: block;
 }
 
 .download img{
@@ -42,54 +51,65 @@ a:active{color: #fff;text-decoration: none}
 
 .download .close {
 	width: 7%;
-	height: 110px;
-	left: 0;
+	height: 100px;
 	text-align: center;
 }
 
 .close .cl{
 	margin-top:30px;
+	color:#000;
+	font-size:2.2rem;
 }
 
 .download .logo{
 	width: 32%;
-	height: 110px;
+	height: 100px;
 	left:6%;
 	text-align: center;
+	line-height: 100px;
+}
+
+.download .logo img{
+	width: 85px;
+	height: 85px;
 }
  
 .download .downtxt{
-	width: 52%;
-	height: 110px;
-	left:40%;
-	text-align: center;
+	width: 51%;
+	height: 100px;
+	left:39%;
+	line-height:20px;
 }
 
 .downtxt .txt,.downtxt .install{
-	margin-top: 5px;
+	margin-top: 10px;
 	font-weight: bold;
-	font-size: 1.4rem;
+	font-size: 1.5rem;
+	line-height: 20px;
 }
 
 .downtxt .install{
 	font-weight: normal;
-	margin-top: 10%;
-	
-
+	margin-top: 5%;
 }
 
 .download .open{
 	width: 10%;
-	height: 110px;
+	height: 100px;
 	left:90%;
 	text-align: center;
-	padding-top:35px;
-} 
+	font-size: 1.5rem;
+	line-height: 100px;
+}
 
 .close,.logo,.downtxt,.open{
 	position: absolute;
 }
- 
+
+.header{
+	display: block;
+}
+
 header{
 	width: 100%;
 	height:70px;
@@ -102,17 +122,25 @@ header{
 
 header span{
 	color:#fff;
-	font-size: 2.2rem;
+	font-size: 2.0rem;
 	margin-top: 10px;
+}
+
+header img{
+    width: 35px;
+    height: 35px;
+	position:absolute;
+	right:5%;
+	top:12px;
 }
 
 header .play{
 	margin-left: 4%;
 }
 
-.video{
+.mvideo{
 	width: 100%;
-	height: 180px;
+	height: 160px;
 	background-color: rgb(68,68,68);
 	/* background:url(../images/u8.png) no-repeat;
 	background-position: center;  */
@@ -120,36 +148,40 @@ header .play{
 	position: relative;
 	top:70px;
 	padding-left: 5%;
+	vertical-align: middle;
+	display: block;
 }
 
-.video img{
+.mvideo img{
 	position: absolute;
+	top:25px;
 }
 
-.video .play{
+.mvideo .play{
 	position: absolute;
 	width: 60%;
-	height: 120px;
+	height: auto;
+	top:20px;
 	right:7px;
 }
 
-.video .play p,.timestart,.timeend{
+.mvideo .play p,.timestart,.timeend{
 	color:#fff;
 }
 
-.video .play img{
+.mvideo .play img{
 	position: absolute;
 	top: 0;
-	right:5%;
+	right:6%;
 }
 
-.video .play .timestart{
+.mvideo .play .timestart{
 	margin-left:2%;
 	position: absolute;
 }
 
-.video .play .timeend{
-	margin-left:57%;
+.mvideo .play .timeend{
+	margin-left:70%;
 	position: absolute;
 }
 
@@ -188,19 +220,20 @@ header .play{
 .afterlisten{
 	margin:0 auto;
 	width: 90%;	
+	height: 50px;
 	position: relative;
-	top:70px;
+	top:55px;
 	margin-top: 10%;
+	background-color: red;
 }
 
 .hot-new{
 	position: absolute;
-	right:0;
+	right:-11%;
 	top:10px;
 	width: 50%;
 	text-align: center;
 	color: #fff;
-
 }
 
 .hot-new p{
@@ -222,12 +255,32 @@ header .play{
 }
 
 .afterhot,.afternew {
-	width: 100%;
-	height: 100px;
+	width: 90%;
+	height: 110px;
 	margin:0 auto;
 	position: relative;
-	margin-top: 20px;
+	margin-top: 60px;
+	background-color: pink;
 } 
+
+.afterhot .img{
+	background: url(../images/u84.png) no-repeat; 
+}
+
+.afternew .img{
+	background: url(../images/u1111.png) no-repeat; 
+}
+
+
+.afterhot .img,.afternew .img{
+	position: absolute;
+	width: 30%;
+	height: 80px;
+	top:10px;
+    background-position: center center;
+	background-size: 100% 100%; 
+}
+
 
 .hotlist ,.hotlist .hotinline,.liketxt{
 	display: inline;
@@ -235,9 +288,10 @@ header .play{
 
  .afterhot .hotlist,.afternew .hotlist{
 	position: absolute;
-	width: 68%;
-	top:8px;
+	width: 63%;
+	top:14px;
 	right:5%;
+	overflow: hidden;
 }
 
 .afterhot img,.afternew img{
@@ -252,12 +306,15 @@ header .play{
 	margin-left: 3%;
 }
 
-.hotlist{
-	text-align: center;
-
-}
-
 .hotlist span{
 	font-size: 1.2rem;
+}
+
+.chevron-right{
+	position:absolute;
+	right:0;
+	top:37px;
+	color:rgb(204,204,204);
+	font-weight: bold;
 }
 
